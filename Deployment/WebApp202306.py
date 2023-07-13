@@ -5,17 +5,17 @@ import streamlit as st
 
 @st.cache_resource
 def load_model():
-    return joblib.load("./output/ModelMasterDict202306.pkl")
+    return joblib.load("../output/ModelMasterDict202306.pkl")
 
 
 @st.cache_resource
 def load_default():
-    return joblib.load("./output/default_values.pkl")
+    return joblib.load("../output/default_values.pkl")
 
 
 @st.cache_data
 def load_value_range():
-    return pd.read_csv("./output/feature_limits.csv")
+    return pd.read_csv("../output/feature_limits.csv")
 
 
 @st.cache_data
@@ -130,7 +130,7 @@ def main():
 
         availability = st.number_input(
             "Availability Score",
-            min_value=limits["availability"][0]//0.01/100 if limits["availability"][0]!=0 else 0,
+            min_value=limits["availability"][0]//0.01/100 if limits["availability"][1]!=0 else 0,
             max_value=limits["availability"][1]//0.01/100+0.01 if limits["availability"][1]!=0 else 0,
             value=defaults["availability"],
         )
@@ -139,21 +139,21 @@ def main():
 
         Prob_VeryLikely = st.number_input(
             "Interest (between 0 and 1)",
-            min_value=limits["Prob_VeryLikely"][0]//0.01/100 if limits["Prob_VeryLikely"][0]!=0 else 0,
+            min_value=limits["Prob_VeryLikely"][0]//0.01/100 if limits["Prob_VeryLikely"][1]!=0 else 0,
             max_value=limits["Prob_VeryLikely"][1]//0.01/100+0.01 if limits["Prob_VeryLikely"][1]!=0 else 0,
             value=defaults["Prob_VeryLikely"],
         )
 
         AffordScore_MA3 = st.number_input(
             "Affordability Score (MA3)",
-            min_value=limits["AffordScore_MA3"][0]//0.01/100 if limits["AffordScore_MA3"][0]!=0 else 0,
+            min_value=limits["AffordScore_MA3"][0]//0.01/100 if limits["AffordScore_MA3"][1]!=0 else 0,
             max_value=limits["AffordScore_MA3"][1]//0.01/100+0.01 if limits["AffordScore_MA3"][1]!=0 else 0,
             value=defaults["AffordScore_MA3"],
         )
 
         RatioGasChargingCost_MA3 = st.number_input(
             "Gas Charging Cost Ratio",
-            min_value=limits["RatioGasChargingCost_MA3"][0]//0.01/100 if limits["RatioGasChargingCost_MA3"][0]!=0 else 0,
+            min_value=limits["RatioGasChargingCost_MA3"][0]//0.01/100 if limits["RatioGasChargingCost_MA3"][1]!=0 else 0,
             max_value=limits["RatioGasChargingCost_MA3"][1]//0.01/100+0.01 if limits["RatioGasChargingCost_MA3"][1]!=0 else 0,
             value=defaults["RatioGasChargingCost_MA3"],
         )
@@ -162,14 +162,14 @@ def main():
             "Charging Ports Per Capita",
             format="%.6f",
             step=1e-6,
-            min_value=limits["ChargingPortsPerCapita"][0]//1e-6/1e6 if limits["ChargingPortsPerCapita"][0]!=0 else 0,
+            min_value=limits["ChargingPortsPerCapita"][0]//1e-6/1e6 if limits["ChargingPortsPerCapita"][1]!=0 else 0,
             max_value=limits["ChargingPortsPerCapita"][1]//1e-6/1e6+1e-6 if limits["ChargingPortsPerCapita"][1]!=0 else 0,
             value=defaults["ChargingPortsPerCapita"],
         )
 
         Infr_avail = st.number_input(
             "Infrastructure-Availability",
-            min_value=limits["Infr_avail"][0]//0.01/100 if limits["Infr_avail"][0]!=0 else 0,
+            min_value=limits["Infr_avail"][0]//0.01/100 if limits["Infr_avail"][1]!=0 else 0,
             max_value=limits["Infr_avail"][1]//0.01/100+0.01 if limits["Infr_avail"][1]!=0 else 0,
             value=defaults["Infr_avail"],
         )
@@ -177,14 +177,14 @@ def main():
     with col2:
         Infr_location = st.number_input(
             "Infrastructure-Location",
-            min_value=limits["Infr_location"][0]//0.01/100 if limits["Infr_location"][0]!=0 else 0,
+            min_value=limits["Infr_location"][0]//0.01/100 if limits["Infr_location"][1]!=0 else 0,
             max_value=limits["Infr_location"][1]//0.01/100+0.01 if limits["Infr_location"][1]!=0 else 0,
             value=defaults["Infr_location"],
         )
 
         Infr_time = st.number_input(
             "Infrastructure-Time",
-            min_value=limits["Infr_time"][0]//0.01/100 if limits["Infr_time"][0]!=0 else 0,
+            min_value=limits["Infr_time"][0]//0.01/100 if limits["Infr_time"][1]!=0 else 0,
             max_value=limits["Infr_time"][1]//0.01/100+0.01 if limits["Infr_time"][1]!=0 else 0,
             value=defaults["Infr_time"],
         )
@@ -198,14 +198,14 @@ def main():
 
         DaysSupply_EV_ICE_Ratio_c = st.number_input(
             "EV ICE Days Supply Ratio",
-            min_value=limits["DaysSupply_EV_ICE_Ratio_c"][0]//0.01/100 if limits["DaysSupply_EV_ICE_Ratio_c"][0]!=0 else 0,
+            min_value=limits["DaysSupply_EV_ICE_Ratio_c"][0]//0.01/100 if limits["DaysSupply_EV_ICE_Ratio_c"][1]!=0 else 0,
             max_value=limits["DaysSupply_EV_ICE_Ratio_c"][1]//0.01/100+0.01 if limits["DaysSupply_EV_ICE_Ratio_c"][1]!=0 else 0,
             value=defaults["DaysSupply_EV_ICE_Ratio_c"],
         )
 
         DaysToTurn_EV_ICE_Ratio = st.number_input(
             "EV ICE Days to Turn Ratio",
-            min_value=limits["DaysToTurn_EV_ICE_Ratio"][0]//0.01/100 if limits["DaysToTurn_EV_ICE_Ratio"][0]!=0 else 0,
+            min_value=limits["DaysToTurn_EV_ICE_Ratio"][0]//0.01/100 if limits["DaysToTurn_EV_ICE_Ratio"][1]!=0 else 0,
             max_value=limits["DaysToTurn_EV_ICE_Ratio"][1]//0.01/100+0.01 if limits["DaysToTurn_EV_ICE_Ratio"][1]!=0 else 0,
             value=defaults["DaysToTurn_EV_ICE_Ratio"],
         )
