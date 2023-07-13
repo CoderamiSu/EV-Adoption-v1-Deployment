@@ -5,17 +5,17 @@ import streamlit as st
 
 @st.cache_resource
 def load_model():
-    return joblib.load("../output/ModelMasterDict202306.pkl")
+    return joblib.load("./output/ModelMasterDict202306.pkl")
 
 
 @st.cache_resource
 def load_default():
-    return joblib.load("../output/default_values.pkl")
+    return joblib.load("./output/default_values.pkl")
 
 
 @st.cache_data
 def load_value_range():
-    return pd.read_csv("../output/feature_limits.csv")
+    return pd.read_csv("./output/feature_limits.csv")
 
 
 @st.cache_data
