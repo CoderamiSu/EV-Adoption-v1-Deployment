@@ -210,7 +210,7 @@ def main():
             value=defaults["DaysToTurn_EV_ICE_Ratio"],
         )
 
-        NoEV_ind = st.selectbox("No EV Inventory", ["No", "Yes"])
+        NoEV_ind = st.selectbox("No EV Inventory", ["No", "Yes"], disabled=('NoEV_ind' not in ModelDict["feature"][segment]))
 
     data = {
         "Age_Under18Years_Pop_Pct": 0.22454363119977208,
