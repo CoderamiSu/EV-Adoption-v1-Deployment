@@ -1,0 +1,72 @@
+segment,feature,lower,upper
+Compact SUV,Prob_VeryLikely,0.175365555,0.290595206
+Compact SUV,AffordScore_MA3,65.63164373,88.17372529
+Compact SUV,RatioGasChargingCost_MA3,9.990104796,14.23573713
+Compact SUV,ChargingPortsPerCapita,0.000100426,0.000520252
+Compact SUV,Infr_avail,9.626435016,100
+Compact SUV,Infr_location,2.992723637,28.21563802
+Compact SUV,Infr_time,5.67325506,7.893513236
+Compact Car,availability,0.601599932,64.43635508
+Compact Car,Prob_VeryLikely,0.160497212,0.264575608
+Compact Car,AffordScore_MA3,81.5437013,100.1077685
+Compact Car,RatioGasChargingCost_MA3,7.513485935,16.0047506
+Compact Car,ChargingPortsPerCapita,0.000100426,0.00091384
+Compact Car,EV_Count,1,2
+Compact Car,Infr_avail,32.70053671,63.46600564
+Compact Car,Infr_location,4.320245446,6.975289066
+Compact Car,Infr_time,5.67325506,7.671487418
+Compact Car,DaysSupply_EV_ICE_Ratio_c,0.408163265,2.244897959
+Large Premium Car,availability,10.27353253,83.78022028
+Large Premium Car,Prob_VeryLikely,0.182799726,0.294312292
+Large Premium Car,AffordScore_MA3,96.12975408,110.7158069
+Large Premium Car,RatioGasChargingCost_MA3,13.52813174,19.89658024
+Large Premium Car,ChargingPortsPerCapita,0.000152904,0.000887601
+Large Premium Car,Infr_avail,5.780751399,46.16042937
+Large Premium Car,Infr_location,4.984006351,22.24178988
+Large Premium Car,Infr_time,5.895280878,16.55252012
+Large Premium Car,DaysToTurn_EV_ICE_Ratio,0,0.326530612
+Small Premium Car,availability,25.74862469,50.89564944
+Small Premium Car,AffordScore_MA3,96.12975408,109.3898021
+Small Premium Car,RatioGasChargingCost_MA3,8.574894018,13.52813174
+Small Premium Car,ChargingPortsPerCapita,0.000126665,0.000520252
+Small Premium Car,Infr_avail,5.780751399,46.16042937
+Small Premium Car,Infr_location,9.630332685,12.94913721
+Small Premium Car,Infr_time,7.4494616,8.337564871
+Small Premium Car,DaysSupply_EV_ICE_Ratio_c,0,3.265306122
+Compact Sporty Car,availability,35.42055729,62.50196856
+Compact Sporty Car,Prob_VeryLikely,0.231121838,0.298029378
+Compact Sporty Car,AffordScore_MA3,88.17372529,116.0198261
+Compact Sporty Car,RatioGasChargingCost_MA3,9.636302102,20.95798832
+Compact Sporty Car,ChargingPortsPerCapita,0.000126665,0.000782644
+Compact Sporty Car,Infr_avail,32.70053671,100
+Compact Sporty Car,Infr_location,6.311528161,20.25050716
+Compact Sporty Car,Infr_time,6.783384148,8.337564871
+Compact Sporty Car,DaysSupply_EV_ICE_Ratio_c,0,1.836734694
+Small SUV,availability,35.42055729,85.7146068
+Small SUV,Prob_VeryLikely,0.17908264,0.31289772
+Small SUV,AffordScore_MA3,90.82573489,102.7597781
+Small SUV,ChargingPortsPerCapita,0.000152904,0.000808883
+Small SUV,Infr_location,18.92298535,21.57802897
+Large Pickup - LD,AffordScore_MA3,66.95764852,89.49973009
+Large Pickup - LD,RatioGasChargingCost_MA3,8.928696713,17.77376407
+Large Pickup - LD,ChargingPortsPerCapita,0.000362817,0.001045036
+Large Pickup - LD,EV_Count,2,3
+Large Pickup - LD,Infr_avail,7.703593208,67.31168926
+Large Pickup - LD,Infr_location,4.984006351,22.24178988
+Large Pickup - LD,Infr_time,7.227435783,9.447693958
+Large Pickup - LD,DaysSupply_EV_ICE_Ratio_c,0.204081633,9.591836735
+Large Van,AffordScore_MA3,93.47774449,122.64985
+Large Van,RatioGasChargingCost_MA3,9.990104796,14.94334252
+Large Van,ChargingPortsPerCapita,0.0002841,0.000520252
+Large Van,Infr_avail,9.626435016,46.16042937
+Large Van,Infr_location,3.656484542,12.94913721
+Large Van,Infr_time,7.893513236,8.559590688
+Large Van,DaysSupply_EV_ICE_Ratio_c,1.428571429,7.346938776
+Small Premium SUV,Prob_VeryLikely,0.171648469,0.309180634
+Small Premium SUV,RatioGasChargingCost_MA3,8.221091324,11.40531557
+Small Premium SUV,ChargingPortsPerCapita,0.000152904,0.000625209
+Small Premium SUV,EV_Count,1,2
+Small Premium SUV,Infr_avail,42.31474575,100
+Small Premium SUV,Infr_location,1.001440922,5.647767256
+Small Premium SUV,Infr_time,5.67325506,16.55252012
+Small Premium SUV,DaysSupply_EV_ICE_Ratio_c,0.204081633,8.775510204
